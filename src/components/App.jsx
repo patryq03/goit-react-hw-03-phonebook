@@ -18,7 +18,7 @@ class App extends Component {
   formSubmitHandler = data => {
     this.repeatControl(data);
   };
-  
+
   repeatControl = data => {
     let nameArray = [];
     nameArray = this.state.contacts.map(cur => cur.name);
@@ -57,6 +57,7 @@ class App extends Component {
     );
     return newArr;
   };
+
 
   render() {
     return (
