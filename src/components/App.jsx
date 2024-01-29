@@ -18,11 +18,11 @@ class App extends Component {
   formSubmitHandler = data => {
     this.repeatControl(data);
   };
-//--------------------------------------------
+/*--------------------------------------------
 
   localStorageFunction(){
     const string = this.state.contacts;
-    localStorage.prototype.push(string);
+    localStorage.setItem({});
   }
 
   async componentDidMount(){
@@ -30,7 +30,7 @@ class App extends Component {
     console.log(this.localStorageFunction);
   }
 
-//--------------------------------------------
+--------------------------------------------*/
   repeatControl = data => {
     let nameArray = [];
     nameArray = this.state.contacts.map(cur => cur.name);

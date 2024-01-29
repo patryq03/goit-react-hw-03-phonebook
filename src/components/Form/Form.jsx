@@ -25,10 +25,10 @@ class Form extends Component {
   };
   render() {
     return (
-      <div className={css.form}>
+      <div className={style.contactform}>
         <form type="submit" onSubmit={this.handleSubmit}>
           <label>
-            <p className={css.p}>Name</p>
+            Name
             <input
               type="text"
               name="name"
@@ -41,7 +41,7 @@ class Form extends Component {
             />
           </label>
           <label>
-            <p className={css.p}>Number</p>
+            Number
             <input
               type="tel"
               name="number"
@@ -53,7 +53,7 @@ class Form extends Component {
               value={this.state.number}
             />
           </label>
-          <button className={css.button} type="submit">Add contact</button>
+          <button type="submit">Add contact</button>
         </form>
       </div>
     );
