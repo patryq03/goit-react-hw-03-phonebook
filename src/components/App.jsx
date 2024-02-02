@@ -28,10 +28,13 @@ class App extends Component {
   }
 
   componentDidUpdate(_, prevState) {
-    if (this.state.contacts !== prevState.contacts) {
-      localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
+    const textContacts = JSON.stringify(this.state.contacts)
+    if (textContacts !== prevState.contacts) {
+      localStorage.setItem('contacts', textContacts);
+
     }
   }
+  
 
   formSubmitHandler = data => {
     this.repeatControl(data);
